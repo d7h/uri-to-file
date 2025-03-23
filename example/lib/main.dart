@@ -2,9 +2,9 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 import 'package:path/path.dart';
-import 'package:uni_links/uni_links.dart';
+// import 'package:uni_links/uni_links.dart';
 import 'dart:async';
 
 import 'package:uri_to_file/uri_to_file.dart';
@@ -40,13 +40,13 @@ class _MyAppState extends State<MyApp> {
 
   /// To get initial uri
   Future<void> _processInitialUri() async {
-    String? uriString = await getInitialLink();
+    String? uriString = "bla";
     _processUri(uriString);
   }
 
   /// To listen for uri
   void _listenForUri() {
-    linkStream.listen((uriString) => _processUri(uriString));
+    // linkStream.listen((uriString) => _processUri(uriString));
   }
 
   /// To process uri
@@ -61,7 +61,6 @@ class _MyAppState extends State<MyApp> {
         setState(() {});
       }
     } catch (e) {
-      Fluttertoast.showToast(msg: 'Something went wrong. Please try again');
       _hasError = true;
       if (kDebugMode) print(e.toString());
     }

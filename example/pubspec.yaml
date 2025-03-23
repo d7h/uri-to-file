@@ -29,10 +29,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
-  uni_links: ^0.5.1
+  # uni_links: ^0.5.1
   path: ^1.8.2
-  path_provider: ^2.0.14
-  fluttertoast: ^8.2.1
+  path_provider: ^2.1.5
+  # fluttertoast: ^8.2.1
 
 dev_dependencies:
   flutter_test:
